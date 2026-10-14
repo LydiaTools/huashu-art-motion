@@ -8,7 +8,7 @@
 
 Let your coding agent turn art styles into paintings that move.
 
-35 art styles · 9 explainer animation grammars · 8 types of parameterized clips · Reference code for narrated films
+36 art styles · 9 explainer animation grammars · 8 types of parameterized clips · Reference code for narrated films
 
 ```sh
 npx skills add alchaincyf/huashu-art-motion
@@ -95,7 +95,7 @@ Eight explainer animation grammars each have a runnable demo film; the images be
 | You ask | It does |
 |---|---|
 | “Recreate this animation” or “Break down this clip” | Runs the breakdown script to measure transitions, a beat grid, and motion heatmaps for each segment, then recreates the underlying mechanisms in code |
-| “Make an animation in the style of Van Gogh, Monet, or Bauhaus” | Designs one frame first, then animates it; 35 style recipe cards provide starting points |
+| “Make an animation in the style of Van Gogh, Monet, or Bauhaus” | Designs one frame first, then animates it; 36 style recipe cards provide starting points |
 | “Make an art animation from my narration” | Builds a shot list → chooses styles → adds a camera to a world canvas → outputs a visual track |
 | “Make a film of someone walking through famous paintings” | Uses the long-scroll skeleton: one segment file per world, a hero moving rightward, style changes at boundaries, and a camera that only moves forward |
 | “Make an animated segment for an explainer video” | Chooses a grammar for the narration and renders a JSON spec into a frame-accurate clip, in landscape or portrait, with optional transparency |
@@ -110,7 +110,7 @@ Before delivery, `qa.py` measures stability, efficiency, motion, smoothness, and
 
 | Component | Quantity / location |
 |---|---|
-| Art-style recipe cards: parameters, motif motion, signature transitions, and current limitations | 35 cards in `references/风格配方/` |
+| Art-style recipe cards: parameters, motif motion, signature transitions, and current limitations | 36 cards in `references/风格配方/` |
 | Corresponding scene code | 35 scenes in `scripts/engine/scenes/` |
 | Explainer animation grammar cards | 9 cards; 8 include demo films, parameterized clips, and example specs |
 | Reference code for narrated films | Mixed styles, whiteboard, Vox, and presenter-led explainers; some assets must be supplied separately—see the directory READMEs |
@@ -122,7 +122,7 @@ Before delivery, `qa.py` measures stability, efficiency, motion, smoothness, and
 ```text
 huashu-art-motion/
 ├── SKILL.md                 # Classify the task, then read the relevant documents
-├── references/              # Methods 01–12, 35 style recipes, 9 grammar cards, proven practices
+├── references/              # Methods 01–12, 36 style recipes, 9 grammar cards, proven practices
 ├── assets/                  # Overview images used in the README
 └── scripts/
     ├── engine/              # Portable animation project: engine, transitions, libraries, scenes, demos, clips
@@ -222,3 +222,7 @@ Start with `python scripts/capabilities.py status --explain`. New capabilities a
 ## Thanks for the feedback
 
 Thanks to [@ismilewolf-eng](https://github.com/ismilewolf-eng) ([PR #1](https://github.com/alchaincyf/huashu-art-motion/pull/1)) and [@noahark](https://github.com/noahark) ([PR #2](https://github.com/alchaincyf/huashu-art-motion/pull/2)) for proposed fixes and validation of concurrent-loading failures on Windows; [@nctt777-hue](https://github.com/nctt777-hue) ([Issue #3](https://github.com/alchaincyf/huashu-art-motion/issues/3)) for detailed reproductions, controlled experiments, and retesting; and [@GFXfly](https://github.com/GFXfly) for additional macOS troubleshooting feedback. Their reports helped fix concurrent loading in the local servers used for rendering and QA.
+
+## Style 36: Rick & Morty
+
+A [recipe](references/风格配方/37_rick_morty.md) and [standalone SVG example](scripts/engine/reference_films/rick_morty/index.html) add offline playback, deterministic seeking, gaze/blink/sip/jump controls, and frame-by-frame video export. Internal ID: 37_rick_morty; 36_picasso_blue is already used. The historical 35-frame overview and Canvas gallery do not include this SVG example. Download the folder and open index.html locally; see the recipe for rendering commands.
