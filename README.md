@@ -18,6 +18,10 @@ npx skills add alchaincyf/huashu-art-motion
 
 </div>
 
+## 动态
+
+- 2026-10：[Open Design](https://github.com/nexu-io/open-design)（nexu-io 出品的开源 AI 设计工作区）的 [motion-design skill](https://github.com/nexu-io/open-design/blob/main/skills/motion-design/SOURCES.md) 把 huashu-art-motion 列为设计来源之一，并在 [skills/huashu-art-motion](https://github.com/nexu-io/open-design/tree/main/skills/huashu-art-motion) 收录了一份适配版，保留了 MIT 许可和上游出处。很高兴这套艺术动画的做法被另一个开源项目用起来，谢谢 Open Design 团队。也欢迎更多项目使用、反馈和贡献。
+
 ## 动画样片
 
 ### 核心案例：花叔闯进超级玛丽
@@ -202,6 +206,8 @@ MIT License © [花叔 Huashu](https://github.com/alchaincyf)
 ---
 
 ## English
+
+**News (2026-10):** [Open Design](https://github.com/nexu-io/open-design), an open-source AI design workspace from nexu-io, lists huashu-art-motion as a design source in its [motion-design skill](https://github.com/nexu-io/open-design/blob/main/skills/motion-design/SOURCES.md) and includes an adapted copy at [skills/huashu-art-motion](https://github.com/nexu-io/open-design/tree/main/skills/huashu-art-motion), with the MIT license and upstream link kept. We're glad to see this approach to art animation used in another open-source project, and thank the Open Design team. More projects, feedback and contributions are welcome.
 
 **huashu-art-motion** is an agent skill for making animation with code, where the paintings actually move. It ships 36 art-style recipes (cave painting, Egyptian murals, Van Gogh, Klimt, Bauhaus, Kirby comics, 8-bit, vaporwave, Shinkai and more), with 35 Canvas scenes plus a standalone SVG Rick & Morty-style example; 8 explainer-video grammars (Kurzgesagt, Vox, whiteboard, storytime, kinetic type, 3Blue1Brown, keynote UI, finance charts) with demo films and parameterized clips you drive with a JSON spec, frame-accurate and in landscape, portrait or alpha; a long-scroll skeleton where a character walks left to right through one painting after another (3 sample worlds included); plus a breakdown script that maps a reference animation into cuts, beat grid and motion heatmaps, and a QA script that measures stability, cost per frame, motion and smoothness.
 
